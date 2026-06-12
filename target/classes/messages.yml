@@ -1,0 +1,37 @@
+# PerPlayerDistance Messages
+# Supports MiniMessage formatting: https://docs.advntr.dev/minimessage/format.html
+# Placeholders use <tag> syntax (e.g. <player>, <view>, <group>)
+
+prefix: "<gradient:#00c6ff:#0072ff><bold>PPD</bold></gradient> <dark_gray>»</dark_gray> "
+
+player:
+  set-view: "<prefix><green>Set <white><player></white>'s view distance to <aqua><view></aqua> chunks."
+  set-simulation: "<prefix><green>Set <white><player></white>'s simulation distance to <aqua><sim></aqua> chunks."
+  reset: "<prefix><yellow>Reset <white><player></white>'s distances to server defaults."
+  not-found: "<prefix><red>Player <white><player></white> not found."
+
+group:
+  set-view: "<prefix><green>Set group <white><group></white>'s view distance to <aqua><view></aqua> chunks."
+  set-simulation: "<prefix><green>Set group <white><group></white>'s simulation distance to <aqua><sim></aqua> chunks."
+  reset: "<prefix><yellow>Reset group <white><group></white>'s distances."
+  not-found: "<prefix><red>LuckPerms group <white><group></white> not found."
+
+reload:
+  success: "<prefix><green>Configuration reloaded successfully."
+
+errors:
+  no-permission: "<prefix><red>You don't have permission to use this command."
+  invalid-number: "<prefix><red><white><value></white> is not a valid number."
+  out-of-range: "<prefix><red>Distance must be between <white><min></white> and <white><max></white> chunks."
+  usage-set: "<prefix><red>Usage: <white>/ppd set <player> <view> [simulation]"
+  usage-reset: "<prefix><red>Usage: <white>/ppd reset <player>"
+  usage-group-set: "<prefix><red>Usage: <white>/ppd group <group> set <view> [simulation]"
+  usage-group-reset: "<prefix><red>Usage: <white>/ppd group <group> reset"
+  usage-main: |-
+    <prefix><gold>--- PerPlayerDistance Commands ---
+    <yellow>/ppd set <player> <view> [sim] <gray>- Set player distances
+    <yellow>/ppd reset <player> <gray>- Reset player to server default
+    <yellow>/ppd group <group> set <view> [sim] <gray>- Set group distances
+    <yellow>/ppd group <group> reset <gray>- Reset group distances
+    <yellow>/ppd reload <gray>- Reload configuration
+  luckperms-not-loaded: "<prefix><red>LuckPerms is not loaded. Group commands are unavailable."
