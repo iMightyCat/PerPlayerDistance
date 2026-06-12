@@ -4,7 +4,6 @@
 
 [![Spigot](https://img.shields.io/badge/Spigot-1.21+-orange.svg)]()
 [![Java](https://img.shields.io/badge/Java-17-blue.svg)]()
-[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
 
 ## Overview
 
@@ -17,9 +16,8 @@ PerPlayerDistance allows server administrators to set individual view and simula
 - **📊 H2 Database** – Lightweight, file-based storage (no external database required)
 - **⚡ Instant Application** – Changes apply immediately, no restart needed
 - **🔄 LuckPerms Integration** – Automatically updates when a player's group changes
-- **🏷️ PlaceholderAPI Support** – Use `%ppd_*%` placeholders in any plugin
+- **🏷️ PlaceholderAPI Support** – Show view distance, simulation distance, and group info in scoreboards, tab lists, and chat
 - **📝 MiniMessage Formatting** – Fully customizable, gradient-supporting messages
-- **🎮 1.21+ Native** – Uses modern Minecraft distance APIs
 
 ## Commands
 
